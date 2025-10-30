@@ -6,15 +6,15 @@
 
 ## 技术栈与开发环境
 
-- Chicken Scheme 5.4.0
+- Common Lisp
 - OpenGL
-- GLFW 3
+- SDL2
 - Linux, MacOS, WSL
 
 ## 引擎框架设计
 
 ### 窗口管理
-- 使用 GLFW 3
+- 使用 SDL2
 - 需要配置文件确定窗口大小参数
 
 ### 渲染模块
@@ -65,4 +65,15 @@
 - 狼群移动的模拟
 
 ## 开发时的参考链接
-- https://call-cc.org/
+
+### 教程
+- https://lispcookbook.github.io/cl-cookbook/
+- https://learnxinyminutes.com/common-lisp/
+
+### 第三方库
+- https://github.com/lispgames/cl-sdl2
+- https://github.com/3b/cl-opengl
+
+### 其他
+- https://adventuresoflambda.wordpress.com/2015/07/12/a-general-guide-to-getting-started-with-cl-sdl2-and-cl-opengl/#comments
+- https://3bb.cc/tutorials/cl-opengl/getting-started.html
