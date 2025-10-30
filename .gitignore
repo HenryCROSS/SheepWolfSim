@@ -53,3 +53,33 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# common lisp
+*.FASL
+*.fasl
+*.lisp-temp
+*.dfsl
+*.pfsl
+*.d64fsl
+*.p64fsl
+*.lx64fsl
+*.lx32fsl
+*.dx64fsl
+*.dx32fsl
+*.fx64fsl
+*.fx32fsl
+*.sx64fsl
+*.sx32fsl
+*.wx64fsl
+*.wx32fsl
+
+# Ignore build output
+build/
+dist/
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore VS Code specific files (optional, but common)
+.vscode/
