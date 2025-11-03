@@ -9,4 +9,5 @@
   (engine:run-e)
   (tools:helper-fn)
   (engine:run)
-  (format t "[main] 项目执行完毕。~%"))
+  (format t "[main] 项目执行完毕。~%")
+  (tools:helper-fn))
