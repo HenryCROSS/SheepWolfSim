@@ -106,13 +106,14 @@
      (:keysym keysym)
      (case (sdl2:scancode keysym)
        (:scancode-q (sdl2:push-quit-event))
-       (:scancode-r (progn (setf *r* (random 1.0)
-                             *g* (random 1.0)
-                             *b* (random 1.0))
-                           (format t "d")))))
+       (:scancode-r
+        (progn
+         (setf *r* (random 1.0)
+           *g* (random 1.0)
+           *b* (random 1.0))
+         (print (list :r *r* :g *g* :b *b*))))))
     (:idle ()
            (funcall render-fn)
-           ;; Swap back buffer
            (sdl2:gl-swap-window window)
            (sdl2:delay 100))))
 
